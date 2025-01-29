@@ -143,6 +143,7 @@
         </tr>
       </thead>
       <tbody>
+        <p>Wait a minute after the download is completed.</p>
         <tr *ngFor="let download of downloads.queue | keyvalue: asIsOrder; trackBy: identifyDownloadRow" [class.disabled]='download.value.deleting'>
           <!--<td>
             <app-slave-checkbox [id]="download.key" [master]="queueMasterCheckbox" [checkable]="download.value"></app-slave-checkbox>
@@ -163,7 +164,7 @@
             </div>
           </td>-->
         </tr>
-      </tbody><p>wait a second</p>
+      </tbody>
     </table>
   </div>
 
